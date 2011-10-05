@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby1.9.1
 # -*- coding: utf-8 -*-
+
+# A simpe space shooter game writen to play with gosu and chingu libs.
+#
+# by Marcin Kacprzak
+
 ROOT_PATH = File.dirname(File.expand_path(__FILE__))
 
 require 'gosu'
@@ -9,7 +14,7 @@ require './level'
 class Game < Chingu::Window
   def initialize(fullscreen = false)
     super(800, 600, fullscreen)
-    self.caption = "RubyShooter"
+    self.caption = "RbShooter"
 
     retrofy
     push_game_state(Chingu::GameStates::FadeTo.new(Intro), :speed => 10)
@@ -41,9 +46,9 @@ class Intro < Chingu::GameState
   def initialize(options = {})
     super
     @big_font = Gosu::Font.new($window, "verdana", 50)
-    @small_font = Gosu::Font.new($window, "verdana", 30)
+    @small_font = Gosu::Font.new($window, "verdana", 20)
     @title = $window.caption
-    @author = "by Yattering"
+    @author = "by yattering"
     self.input = {:space => :go_to_menu, :escape => :close_game}
   end
 
@@ -53,7 +58,7 @@ class Intro < Chingu::GameState
 
   def draw
     draw_on_center(@big_font, @title)
-    draw_on_center(@small_font, @author, 50)
+    draw_on_center(@small_font, @author, 20)
   end
 end
 
