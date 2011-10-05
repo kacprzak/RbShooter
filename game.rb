@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby1.9.1
 # -*- coding: utf-8 -*-
 
-# A simpe space shooter game writen to play with gosu and chingu libs.
+# A simpe space shooter game written to play with gosu and chingu libs.
 #
 # by Marcin Kacprzak
 

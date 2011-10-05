@@ -1,0 +1,11 @@
+RbShooter is a simple space shooter game written to play with gosu and chingu libs.
+
+You need Ruby 1.9 to run this game
+
+To play just execute file:
+
+$ ./game.rb
+
+or:
+ 
+$ ruby game.rb
