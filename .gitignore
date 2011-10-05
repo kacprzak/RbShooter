@@ -1,4 +1,5 @@
 *.[oa]
 *~
-old
-data
+/old
+/data
+/media/starscape_fg.png
